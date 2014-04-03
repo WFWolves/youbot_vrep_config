@@ -1,11 +1,11 @@
-youBot world and build library for v-rep
+youBot world and prebuild library for v-rep
 =============
 
 
 Introduction
 ------------------
 This package only contains a prebuild version of the library available at: https://github.com/mfueller/vrep_youbot_plugin
-And additionally a scene file with lua scripts to build a youbot_oodl compatible environment. I don't claim any copyright i just want to make the first steps of simulating the youbot in v-rep as easy as possible to people who are interested in industrial robotics.
+and additionally a scene file with lua scripts to build a youbot_oodl compatible environment. I don't claim any copyright i just want to make the first steps of simulating the youbot in v-rep as easy as possible to people who are interested in industrial robotics.
 
 
 Usage
