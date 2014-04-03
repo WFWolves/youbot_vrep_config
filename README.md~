@@ -1,0 +1,24 @@
+youBot world and build library for v-rep
+=============
+
+
+Introduction
+------------------
+
+
+
+Usage
+------------------
+
+
+
+Notes
+------------------
+https://github.com/mfueller/vrep_youbot_plugin
+
+
+Dependencies
+------------------
+* ROS-Environment
+* vrep_youbot_plugin
+
