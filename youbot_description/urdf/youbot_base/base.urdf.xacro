@@ -94,11 +94,27 @@
       			</collision>
     		</link>		
 
-		<!-- base laser front -->
-                       
-    		<xacro:hokuyo_urg04_laser name="${name}_laser_front" parent="${name}" ros_topic="scan_front" update_rate="10" min_angle="-1.57" max_angle="1.57" >
-     			 <origin xyz="0.3 0 -0.03" rpy="0 0 0" />
-    		</xacro:hokuyo_urg04_laser>
+	<!-- base laser front -->                
+    	<xacro:hokuyo_urg04_laser name="${name}_laser_front" parent="${name}" ros_topic="scan_front" update_rate="10" min_angle="-1.57" max_angle="1.57" >
+    		 <origin xyz="0.30 0 -0.03" rpy="0 0 0" />
+    	</xacro:hokuyo_urg04_laser>
+
+    <!-- sim dummies -->
+    		<joint name="suspension_joint" type="continuous">
+				<origin xyz="0.30 0 -0.03" rpy="0 0 0" />
+				<parent link="base_footprint"/>
+    		</joint>
+
+    		<joint name="Hokuyo_URG_04LX_UG01_ROS_joint" type="continuous">
+				<origin xyz="0.30 0 -0.03" rpy="0 0 0" />
+				<parent link="base_footprint"/>
+    		</joint>
+
+    		<joint name="Hokuyo_URG_04LX_UG01_ROS_jointB" type="continuous">
+				<origin xyz="-0.30 0 -0.03" rpy="0 0 0" />
+				<parent link="base_footprint"/>
+    		</joint>
+
 
     <!-- base laser back -->
          <xacro:hokuyo_urg04_laser name="${name}_laser_back" parent="${name}" ros_topic="scan_back" update_rate="10" min_angle="-1.57" max_angle="1.57" >
