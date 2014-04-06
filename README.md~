@@ -15,11 +15,6 @@ Usage
  * start v-rep and open the *.ttt file
 
 
-Notes
-------------------
-* The libraries were build for Ubuntu 12.04
-
-
 Dependencies
 ------------------
 * ROS-Environment
